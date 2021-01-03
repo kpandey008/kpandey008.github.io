@@ -13,9 +13,9 @@ at the Indian Institute of Technology, Kanpur. My current research interests lie
 study of Representation Learning, Deep Generative Modelling, Computer Vision and Deep Reinforcement Learning.
 However, I also like to read about Causal reasoning, Computational neuroscience and Computational genomics
 
-While I am not involved in reading about any of these things, I like to think about the impact of training
+While I am not involved in reading about any of these things, I like to think and discuss about the impact of training
 large models on our climate (uggh! GPT3) and where are we progressing as a community on our quest towards
-AGI and beyond (whatever that might be!). I am also a proponent of the slow science manifesto. Read about it [here](http://slow-science.org/).
+AGI and beyond (whatever that might be!). I am also a proponent of the slow science manifesto. Read about it [here](http://slow-science.org/). If you are interested in reaching out to me about any of this stuff, feel free to contact me here (http://kpandey008.github.io/contact)
 
 # Not so long ago...
 
