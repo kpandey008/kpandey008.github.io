@@ -10,8 +10,8 @@ redirect_from:
 
 Hello! My name is Kushagra Pandey and I am currently a first year graduate student in Computer Science
 at the Indian Institute of Technology, Kanpur. My current research interests lie in the
-study of Representation Learning, Deep Generative Modelling, Computer Vision and Deep Reinforcement Learning.
-However, I also like to read about Causal reasoning, Computational neuroscience and Computational genomics
+study of Representation Learning, Deep Generative Modelling and Computer Vision.
+However, I also like to read about Computational genomics and am trying to explore more about Computational neuroscience.
 
 While I am not involved in reading about any of these things, I like to think and discuss about the impact of training
 large models on our climate (uggh! GPT3) and where are we progressing as a community on our quest towards
