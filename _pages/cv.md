@@ -1,7 +1,8 @@
 ---
 layout: page
-title: vitae
 permalink: /cv/
+title: vitae
+description:
 nav: true
 ---
 
