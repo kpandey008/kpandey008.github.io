@@ -1,7 +1,6 @@
 ---
 layout: post
-date: 2021-11-10
+date: 2022-06-30
 inline: true
 ---
-
-Our work on MARGARET was presented as a poster at the HCA Asia Meetings 2021 on November 15th, 2021
+Graduated from IIT Kanpur. Thanks to my advisor Prof. Piyush Rai for his incredible guidance and support during this time!

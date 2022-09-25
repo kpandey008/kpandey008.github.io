@@ -5,7 +5,7 @@
 
 @article{diffuseVAE,
   abbr      = {Under review},
-  abbr2     = {Conference},
+  abbr2     = {Journal},
   author    = {Pandey, Kushagra and Mukherjee, Avideep and Rai, Piyush and Kumar, Abhishek},
   title     = {DiffuseVAE: Efficient, Controllable and High-Fidelity Generation from Low-Dimensional Latents},
   year      = {2022},
@@ -31,19 +31,22 @@
   code      = {https://github.com/kpandey008/DiffuseVAE}
 }
 
-@article{Pandey2021.10.22.465455,
-  abbr         = {biorXiv},
-  abbr2        = {Journal},
-  author       = {Pandey, Kushagra and Zafar, Hamim},
-  title        = {Inference of cell state transitions and cell fate plasticity from single-cell with MARGARET},
-  elocation-id = {2021.10.22.465455},
-  year         = {2021},
-  doi          = {10.1101/2021.10.22.465455},
-  publisher    = {Cold Spring Harbor Laboratory},
-  abstract     = {Despite recent advances in inferring cellular dynamics using single-cell RNA-seq data, existing trajectory inference (TI) methods face difficulty in accurately reconstructing cell-state manifold and inferring trajectory and cell fate plasticity for complex topologies. We present MARGARET, a novel TI method that utilizes a deep unsupervised metric learning-based approach for inferring the cellular embeddings and employs a novel measure of connectivity between cell clusters and a graph-partitioning approach to reconstruct complex trajectory topologies. MARGARET utilizes the inferred trajectory for determining terminal states and inferring cell-fate plasticity using a scalable absorbing Markov Chain model. On a diverse simulated benchmark, MARGARET out-performed state-of-the-art methods in recovering global topology and cell pseudotime ordering. When applied to experimental datasets from hematopoiesis, embryogenesis, and colon differentiation, MARGARET reconstructed major lineages and associated gene expression trends, better characterized key branching events and transitional cell types, and identified novel cell types, and branching events that were previously uncharacterized.Competing Interest StatementThe authors have declared no competing interest.},
-  url          = {https://www.biorxiv.org/content/early/2021/10/24/2021.10.22.465455},
-  eprint       = {https://www.biorxiv.org/content/early/2021/10/24/2021.10.22.465455.full.pdf},
-  journal      = {bioRxiv},
-  pdf          = {https://www.biorxiv.org/content/10.1101/2021.10.22.465455v1},
-  code         = {https://github.com/Zafar-Lab/Margaret}
+@article{10.1093/nar/gkac412,
+  abbr     = {NAR},
+  abbr2    = {Journal},
+  author   = {Pandey, Kushagra and Zafar, Hamim},
+  title    = {{Inference of cell state transitions and cell fate plasticity from single-cell with MARGARET}},
+  journal  = {Nucleic Acids Research},
+  volume   = {50},
+  number   = {15},
+  pages    = {e86-e86},
+  year     = {2022},
+  month    = {05},
+  abstract = {{Despite recent advances in inferring cellular dynamics using single-cell RNA-seq data, existing trajectory inference (TI) methods face difficulty in accurately reconstructing the cell-state manifold and cell-fate plasticity for complex topologies. Here, we present MARGARET (https://github.com/Zafar-Lab/Margaret) for inferring single-cell trajectory and fate mapping for diverse dynamic cellular processes. MARGARET reconstructs complex trajectory topologies using a deep unsupervised metric learning and a graph-partitioning approach based on a novel connectivity measure, automatically detects terminal cell states, and generalizes the quantification of fate plasticity for complex topologies. On a diverse benchmark consisting of synthetic and real datasets, MARGARET outperformed state-of-the-art methods in recovering global topology and cell pseudotime ordering. For human hematopoiesis, MARGARET accurately identified all major lineages and associated gene expression trends and helped identify transitional progenitors associated with key branching events. For embryoid body differentiation, MARGARET identified novel transitional populations that were validated by bulk sequencing and functionally characterized different precursor populations in the mesoderm lineage. For colon differentiation, MARGARET characterized the lineage for BEST4/OTOP2 cells and the heterogeneity in goblet cell lineage in the colon under normal and inflamed ulcerative colitis conditions. Finally, we demonstrated that MARGARET can scale to large scRNA-seq datasets consisting of ∼ millions of cells.}},
+  issn     = {0305-1048},
+  doi      = {10.1093/nar/gkac412},
+  url      = {https://doi.org/10.1093/nar/gkac412},
+  eprint   = {https://academic.oup.com/nar/article-pdf/50/15/e86/45508267/gkac412.pdf},
+  code     = {https://github.com/Zafar-Lab/Margaret},
+  pdf      = {https://watermark.silverchair.com/gkac412.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAs8wggLLBgkqhkiG9w0BBwagggK8MIICuAIBADCCArEGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMe5mdudRXKfBvtciBAgEQgIICgpazx7TJinKDjv-17zvV6IUQRV3AmrZU8NAgYlv3ju70WoVGR7Ig8Rj8i2UhFoUdK-NiQOzFESJTunyQFYNs7dp6GZ_FivvI0aA749dLjpdsjnCoRjgDQqFlESRMf8xMxC2kJhnPzo8MZpC20Rp-J-QwvtRTOwJl9h4mGiRnKWSy_9CGXboWHcVzttZDbbNDMC396nCQwtJTU2znlbsOqsWMJqY-KbjHH0KbMZ66rf5HRp7DtFRMernXclhdHekm1M6w31PX5AY6w2NsRbVhl7vDgfKfSprcx1mSz5tUH5HCn1Uve2HgZZRhM6H6jJORpbYQHrdnqRio8vEaf3zZ60eaUdA4zYD0IIpkat_eN90ie140dUWknP2BNaAOkuO_EcqNChdR3ZDKdOoBfoCSXT0URehC1sQyRzhfMBlyq-LgFnn75a_Y5DG9Q4R9lHoekMQTPmlMkVY5KCCFUCxlcAiUDNqwoOMxqc2BnWgbgyEbs-_gnNBszDtpTRIZDniAY4ncgU5_aHO5_Fgx6AVWh9bNQhIhy5yZMc0t3011CIwkIQs3R6x2gjBRu1zPEJHN8SIvA_N8cYmCrS73pc6SALoPQ0BDzspiaxFY6uRvqe6OmTgKyDXOID9VJ0QhAV_xJuGmi0niCwWS3Qm2N27KNX8wHprSrkxNNfw51-r6WXsZiEOMSYqFjX69WBPooiBIwLtR8Zpz1gHQLBUX8QlZwnRiHyxLcAqigS4_2_tkxP281x6X-qfo9tL-HJ4gxec0cebuJ7CS_pV1vgUsSsu_A3yJSC14O9zaaWaXz1SJNa1_KZVtCznnch1MHvl4QaQ4fs7S4xcmLSyCXFcsHfD5rDIHYw}
 }
