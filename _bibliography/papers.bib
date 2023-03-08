@@ -3,6 +3,19 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{PSLD,
+  abbr      = {arxiv},
+  abbr2     = {Preprint},
+  author    = {Pandey, Kushagra and Mandt, Stephan},
+  title     = {Generative Diffusions in Augmented Spaces: A Complete Recipe},
+  year      = {2023},
+  publisher = {},
+  abstract  = {Score-based Generative Models (SGMs) have achieved state-of-the-art synthesis results on diverse tasks. However, the current design space of the forward diffusion process is largely unexplored and often relies on physical intuition or simplifying assumptions. Leveraging results from the design of scalable Bayesian posterior samplers, we present a complete recipe for constructing forward processes in SGMs, all of which are guaranteed to converge to the target distribution of interest. We show that several existing SGMs can be cast as specific instantiations of this parameterization. Furthermore, building on this recipe, we construct a novel SGM: Phase Space Langevin Diffusion (PSLD), which performs score-based modeling in a space augmented with auxiliary variables akin to a physical phase space. We show that PSLD outperforms competing baselines in terms of sample quality and the speed-vs-quality tradeoff across different samplers on various standard image synthesis benchmarks. Moreover, we show that PSLD achieves sample quality comparable to state-of-the-art SGMs (FID: 2.10 on unconditional CIFAR-10 generation), providing an attractive alternative as an SGM backbone for further development. We will publish our code and model checkpoints for reproducibility at https://github.com/mandt-lab/PSLD},
+  journal   = {},
+  pdf       = {https://arxiv.org/abs/2303.01748},
+  code      = {https://github.com/mandt-lab/PSLD}
+}
+
 @article{diffuseVAE,
   abbr      = {TMLR},
   abbr2     = {Journal},
