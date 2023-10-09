@@ -20,7 +20,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-Hi, I am currently a second year PhD student in Computer Science at the [University of California, Irvine](https://www.uci.edu/) advised by [Prof. Stephan Mandt](http://www.stephanmandt.com/). I recently completed a summer internship supervised by [Maja Rudolph](http://maja-rita-rudolph.com/) at Bosch AI Research. My current research work is supported by the [HPI Fellowship](https://hpi.ics.uci.edu/).
+Hi, I am currently a second year PhD student in Computer Science at the [University of California, Irvine](https://www.uci.edu/) advised by [Prof. Stephan Mandt](http://www.stephanmandt.com/). I recently completed a summer internship supervised by [Dr. Maja Rudolph](http://maja-rita-rudolph.com/) at Bosch AI Research. My current research work is supported by the [HPI Fellowship](https://hpi.ics.uci.edu/).
 
 Previously, I was a graduate student in Computer Science at the [Indian Institute of Technology, Kanpur](https://www.iitk.ac.in/) advised by [Prof. Piyush Rai](https://www.cse.iitk.ac.in/users/piyush/) where I also collaborated with [Dr. Abhishek Kumar](http://www.abhishek.umiacs.io/) and [Prof. Hamim Zafar](https://hamimzafar.wixsite.com/home).
 
