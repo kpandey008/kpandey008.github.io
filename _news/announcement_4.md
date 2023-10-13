@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-11-14
+date: 2023-10-12
 inline: true
 ---
 
-Our paper "DiffuseVAE: Efficient, Controllable and High-Fidelity Generation from Low-Dimensional Latents" has been accepted into TMLR!
+Check out our new work on designing [Efficient Integrators for Diffusion Generative Models](https://arxiv.org/abs/2310.07894). We devise efficient frameworks for fast deterministic/stochastic sampling from diffusion models.
