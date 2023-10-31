@@ -17,6 +17,13 @@
     <abbr class="badge {{entry.abbr2}}">{{entry.abbr2}}</abbr>
     {% endif %}
     {% endif %}
+    {% if entry.abbr3 %}
+    {% if site.data.venues[entry.abbr3] %}
+    <abbr class="badge {{entry.abbr3}}"><a href="{{site.data.venues[entry.abbr3].url}}">{{entry.abbr3}}</a></abbr>
+    {% else %}
+    <abbr class="badge {{entry.abbr3}}">{{entry.abbr3}}</abbr>
+    {% endif %}
+    {% endif %}
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">

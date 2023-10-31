@@ -3,11 +3,22 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{pandey2023towards,
+  abbr      = {NeurIPS'23},
+  abbr2     = {Workshop},
+  author    = {Pandey, Kushagra and Rudolph, Maja and Mandt, Stephan},
+  title     = {Towards Fast Stochastic Sampling in Diffusion Generative Models},
+  year      = {2023},
+  abstract  = {Diffusion models suffer from slow sample generation at inference time. Despite recent efforts, improving the sampling efficiency of stochastic samplers for diffusion models remains a promising direction. We propose Splitting Integrators for fast stochastic sampling in pre-trained diffusion models in augmented spaces. Commonly used in molecular dynamics, splitting-based integrators attempt to improve sampling efficiency by cleverly alternating between numerical updates involving the data, auxiliary, or noise variables. However, we show that a naive application of splitting integrators is sub-optimal for fast sampling. Consequently, we propose several modifications to improve sampling efficiency and denote the resulting samplers as Reduced Splitting Integrators. In the context of Phase Space Langevin Diffusion [Pandey & Mandt, 2023] on CIFAR-10, our stochastic sampler achieves an FID score of 2.36 in only 100 network function evaluations (NFE) as compared to 2.63 for the best baselines.},
+  pdf       = {https://openreview.net/forum?id=iSZZJjkjzu},
+  journal   = {NeurIPS 2023 Workshop on Diffusion Models},
+  code      = {}
+}
+
 
 @article{Efficient,
   abbr      = {Arxiv},
-  abbr2     = {Preprint},
-  comments  = {Preprint},
+  comments  = {Under Submission},
   author    = {Pandey, Kushagra and Rudolph, Maja and Mandt, Stephan},
   title     = {Efficient Integrators for Diffusion Generative Models},
   year      = {2023},
@@ -20,12 +31,14 @@ we present a hybrid method that leads to the best-reported performance for diffu
 respectively. Our code and model checkpoints will be made publicly available at
 https://github.com/mandt-lab/PSLD},
   pdf       = {https://arxiv.org/abs/2310.07894},
+  journal   = {Preprint. ArXiv},
   code      = {https://github.com/mandt-lab/PSLD}
 }
 
 @article{PSLD,
   abbr      = {ICCV'23},
   abbr2     = {Conference},
+  abbr3     = {Oral},
   comments  = {Oral Presentation (1.8% acceptance rate)},
   author    = {Pandey, Kushagra and Mandt, Stephan},
   title     = {A Complete Recipe for Diffusion Generative Models},
@@ -53,7 +66,8 @@ https://github.com/mandt-lab/PSLD},
 
 @article{vaedm,
   abbr      = {NeurIPS'21},
-  abbr2     = {Conference},
+  abbr2     = {Workshop},
+  abbr3     = {Oral},
   comments  = {Oral Presentation},
   author    = {Pandey, Kushagra and Mukherjee, Avideep and Rai, Piyush and Kumar, Abhishek},
   title     = {VAEs meet Diffusion Models: Efficient and High-Fidelity Generation},
