@@ -1,8 +1,6 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2023-10-07
 inline: true
-related_posts: false
 ---
-
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Attended ICCV'23 in Paris. Check out our work on [A Complete Recipe for Diffusion Generative Models](https://openaccess.thecvf.com/content/ICCV2023/papers/Pandey_A_Complete_Recipe_for_Diffusion_Generative_Models_ICCV_2023_paper.pdf) which was accepted as an Oral Presentation at ICCV'23.

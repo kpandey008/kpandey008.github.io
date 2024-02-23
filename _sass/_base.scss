@@ -716,6 +716,18 @@ footer.sticky-bottom {
             }
           }
         }
+        .Conference{
+          background-color: var(--global-conference-color);
+        }
+        .Journal{
+          background-color: var(--global-journal-color);
+        }
+        .Workshop{
+          background-color: var(--global-workshop-color);
+        }
+        .Oral{
+          background-color: var(--global-oral-color);
+        }
 
         .award {
           color: var(--global-theme-color) !important;

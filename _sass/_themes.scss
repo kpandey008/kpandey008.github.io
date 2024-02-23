@@ -29,6 +29,10 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-conference-color: #{$conference-color};
+  --global-oral-color: #{$oral-color};
+  --global-workshop-color: #{$workshop-color};
+  --global-journal-color: #{$journal-color};
 
   .fa-sun {
     display: none;
