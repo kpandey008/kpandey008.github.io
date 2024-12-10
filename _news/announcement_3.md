@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2023-10-07
+date: 2024-12-10
 inline: true
 ---
-Attended ICCV'23 in Paris. Check out our work on [A Complete Recipe for Diffusion Generative Models](https://openaccess.thecvf.com/content/ICCV2023/papers/Pandey_A_Complete_Recipe_for_Diffusion_Generative_Models_ICCV_2023_paper.pdf) which was accepted as an Oral Presentation at ICCV'23.
+
+Check out our new work on [accelerating inverse problem solving using diffusion models](https://mandt-lab.github.io/c-pigdm/) to be presented as NeurIPS'24.

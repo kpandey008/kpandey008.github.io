@@ -3,51 +3,85 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{manduchi2024challengesopportunitiesgenerativeai,
+  abbr     = {Arxiv},
+  abbr2    = {Preprint},
+  title    = {On the Challenges and Opportunities in Generative AI},
+  author   = {Laura Manduchi and Kushagra Pandey and Robert Bamler and Ryan Cotterell and Sina Däubener and Sophie Fellenz and Asja Fischer and Thomas Gärtner and Matthias Kirchler and Marius Kloft and Yingzhen Li and Christoph Lippert and Gerard de Melo and Eric Nalisnick and Björn Ommer and Rajesh Ranganath and Maja Rudolph and Karen Ullrich and Guy Van den Broeck and Julia E Vogt and Yixin Wang and Florian Wenzel and Frank Wood and Stephan Mandt and Vincent Fortuin},
+  year     = {2024},
+  pdf      = {https://arxiv.org/pdf/2403.00025},
+  journal  = {Arxiv},
+  abstract = {The field of deep generative modeling has grown rapidly and consistently over the years. With the availability of massive amounts of training data coupled with advances in scalable unsupervised learning paradigms, recent large-scale generative models show tremendous promise in synthesizing high-resolution images and text, as well as structured data such as videos and molecules. However, we argue that current large-scale generative AI models do not sufficiently address several fundamental issues that hinder their widespread adoption across domains. In this work, we aim to identify key unresolved challenges in modern generative AI paradigms that should be tackled to further enhance their capabilities, versatility, and reliability. By identifying these challenges, we aim to provide researchers with valuable insights for exploring fruitful research directions, thereby fostering the development of more robust and accessible generative AI solutions.}
+}
+
+@article{pandey2024heavytaileddiffusionmodels,
+  abbr     = {Arxiv},
+  abbr2    = {Preprint},
+  title    = {Heavy-Tailed Diffusion Models},
+  author   = {Kushagra Pandey and Jaideep Pathak and Yilun Xu and Stephan Mandt and Michael Pritchard and Arash Vahdat and Morteza Mardani},
+  year     = {2024},
+  abstract = {Diffusion models achieve state-of-the-art generation quality across many applications, but their ability to capture rare or extreme events in heavy-tailed distributions remains unclear. In this work, we show that traditional diffusion and flow-matching models with standard Gaussian priors fail to capture heavy-tailed behavior. We address this by repurposing the diffusion framework for heavy-tail estimation using multivariate Student-t distributions. We develop a tailored perturbation kernel and derive the denoising posterior based on the conditional Student-t distribution for the backward process. Inspired by γ-divergence for heavy-tailed distributions, we derive a training objective for heavy-tailed denoisers. The resulting framework introduces controllable tail generation using only a single scalar hyperparameter, making it easily tunable for diverse real-world distributions. As specific instantiations of our framework, we introduce t-EDM and t-Flow, extensions of existing diffusion and flow models that employ a Student-t prior. Remarkably, our approach is readily compatible with standard Gaussian diffusion models and requires only minimal code changes. Empirically, we show that our t-EDM and t-Flow outperform standard diffusion models in heavy-tail estimation on high-resolution weather datasets in which generating rare and extreme events is crucial.},
+  pdf      = {https://arxiv.org/pdf/2410.14171},
+  journal  = {Arxiv}
+}
+
+@article{pandey2024fast,
+  abbr     = {NeurIPS'24},
+  abbr2    = {Conference},
+  title    = {Fast samplers for Inverse Problems in Iterative Refinement models},
+  author   = {Pandey, Kushagra and Yang, Ruihan and Mandt, Stephan},
+  year     = {2024},
+  abstract = {Constructing fast samplers for unconditional diffusion and flow-matching models has received much attention recently; however, existing methods for solving inverse problems, such as super-resolution, inpainting, or deblurring, still require hundreds to thousands of iterative steps to obtain high-quality results. We propose a plug-and-play framework for constructing efficient samplers for inverse problems, requiring only pre-trained diffusion or flow-matching models. We present Conditional Conjugate Integrators, which leverage the specific form of the inverse problem to project the respective conditional diffusion/flow dynamics into a more amenable space for sampling. Our method complements popular posterior approximation methods for solving inverse problems using diffusion/flow models. We evaluate the proposed method's performance on various linear image restoration tasks across multiple datasets, employing diffusion and flow-matching models. Notably, on challenging inverse problems like 4x super-resolution on the ImageNet dataset, our method can generate high-quality samples in as few as 5 conditional sampling steps and outperforms competing baselines requiring 20-1000 steps. Our code will be publicly available at https://github.com/mandt-lab/c-pigdm.},
+  pdf      = {https://openreview.net/forum?id=qxS4IvtLdD},
+  journal  = {NeurIPS},
+  code     = {https://github.com/mandt-lab/c-pigdm}
+}
+
 @article{pandey2023towards,
-  abbr      = {NeurIPS'23},
-  abbr2     = {Workshop},
-  author    = {Pandey, Kushagra and Rudolph, Maja and Mandt, Stephan},
-  title     = {Towards Fast Stochastic Sampling in Diffusion Generative Models},
-  year      = {2023},
-  abstract  = {Diffusion models suffer from slow sample generation at inference time. Despite recent efforts, improving the sampling efficiency of stochastic samplers for diffusion models remains a promising direction. We propose Splitting Integrators for fast stochastic sampling in pre-trained diffusion models in augmented spaces. Commonly used in molecular dynamics, splitting-based integrators attempt to improve sampling efficiency by cleverly alternating between numerical updates involving the data, auxiliary, or noise variables. However, we show that a naive application of splitting integrators is sub-optimal for fast sampling. Consequently, we propose several modifications to improve sampling efficiency and denote the resulting samplers as Reduced Splitting Integrators. In the context of Phase Space Langevin Diffusion [Pandey & Mandt, 2023] on CIFAR-10, our stochastic sampler achieves an FID score of 2.36 in only 100 network function evaluations (NFE) as compared to 2.63 for the best baselines.},
-  pdf       = {https://openreview.net/forum?id=iSZZJjkjzu},
-  journal   = {NeurIPS 2023 Workshop on Diffusion Models},
-  code      = {}
+  abbr     = {NeurIPS'23},
+  abbr2    = {Workshop},
+  author   = {Pandey, Kushagra and Rudolph, Maja and Mandt, Stephan},
+  title    = {Towards Fast Stochastic Sampling in Diffusion Generative Models},
+  year     = {2023},
+  abstract = {Diffusion models suffer from slow sample generation at inference time. Despite recent efforts, improving the sampling efficiency of stochastic samplers for diffusion models remains a promising direction. We propose Splitting Integrators for fast stochastic sampling in pre-trained diffusion models in augmented spaces. Commonly used in molecular dynamics, splitting-based integrators attempt to improve sampling efficiency by cleverly alternating between numerical updates involving the data, auxiliary, or noise variables. However, we show that a naive application of splitting integrators is sub-optimal for fast sampling. Consequently, we propose several modifications to improve sampling efficiency and denote the resulting samplers as Reduced Splitting Integrators. In the context of Phase Space Langevin Diffusion [Pandey & Mandt, 2023] on CIFAR-10, our stochastic sampler achieves an FID score of 2.36 in only 100 network function evaluations (NFE) as compared to 2.63 for the best baselines.},
+  pdf      = {https://openreview.net/forum?id=iSZZJjkjzu},
+  journal  = {NeurIPS 2023 Workshop on Diffusion Models},
+  code     = {}
 }
 
 
 @article{Efficient,
-  abbr      = {ICLR'24},
-  abbr2     = {Conference},
-  author    = {Pandey, Kushagra and Rudolph, Maja and Mandt, Stephan},
-  title     = {Efficient Integrators for Diffusion Generative Models},
-  year      = {2024},
-  abstract  = {Diffusion models suffer from slow sample generation at inference time. Therefore, developing a principled framework for fast deterministic/stochastic sampling for a broader class of diffusion models is a promising direction. We propose two complementary frameworks for accelerating sample generation in pretrained models: Conjugate Integrators and Splitting Integrators. Conjugate integrators generalize DDIM, mapping the reverse diffusion dynamics to a more
-amenable space for sampling. In contrast, splitting-based integrators, commonly
-used in molecular dynamics, reduce the numerical simulation error by cleverly
-alternating between numerical updates involving the data and auxiliary variables. After extensively studying these methods empirically and theoretically,
-we present a hybrid method that leads to the best-reported performance for diffusion models in augmented spaces. Applied to Phase Space Langevin Diffusion
-[Pandey & Mandt, 2023] on CIFAR-10, our deterministic and stochastic samplers achieve FID scores of 2.11 and 2.36 in only 100 network function evaluations (NFE) as compared to 2.57 and 2.63 for the best-performing baselines,
-respectively. Our code and model checkpoints will be made publicly available at
-https://github.com/mandt-lab/PSLD},
-  pdf       = {https://arxiv.org/abs/2310.07894},
-  journal   = {International Conference on Learning Representations},
-  code      = {https://github.com/mandt-lab/PSLD}
+  abbr     = {ICLR'24},
+  abbr2    = {Conference},
+  author   = {Pandey, Kushagra and Rudolph, Maja and Mandt, Stephan},
+  title    = {Efficient Integrators for Diffusion Generative Models},
+  year     = {2024},
+  abstract = {Diffusion models suffer from slow sample generation at inference time. Therefore, developing a principled framework for fast deterministic/stochastic sampling for a broader class of diffusion models is a promising direction. We propose two complementary frameworks for accelerating sample generation in pretrained models: Conjugate Integrators and Splitting Integrators. Conjugate integrators generalize DDIM, mapping the reverse diffusion dynamics to a more
+              amenable space for sampling. In contrast, splitting-based integrators, commonly
+              used in molecular dynamics, reduce the numerical simulation error by cleverly
+              alternating between numerical updates involving the data and auxiliary variables. After extensively studying these methods empirically and theoretically,
+              we present a hybrid method that leads to the best-reported performance for diffusion models in augmented spaces. Applied to Phase Space Langevin Diffusion
+              [Pandey & Mandt, 2023] on CIFAR-10, our deterministic and stochastic samplers achieve FID scores of 2.11 and 2.36 in only 100 network function evaluations (NFE) as compared to 2.57 and 2.63 for the best-performing baselines,
+              respectively. Our code and model checkpoints will be made publicly available at
+              https://github.com/mandt-lab/PSLD},
+  pdf      = {https://arxiv.org/abs/2310.07894},
+  journal  = {International Conference on Learning Representations},
+  code     = {https://github.com/mandt-lab/PSLD}
 }
 
 @article{PSLD,
-  abbr      = {ICCV'23},
-  abbr2     = {Conference},
-  abbr3     = {Oral},
-  comments  = {Oral Presentation (1.8% acceptance rate)},
-  author    = {Pandey, Kushagra and Mandt, Stephan},
-  title     = {A Complete Recipe for Diffusion Generative Models},
-  pages     = {4261--4272},
-  year      = {2023},
-  abstract  = {Score-based Generative Models (SGMs) have demonstrated exceptional synthesis outcomes across various tasks. However, the current design landscape of the forward diffusion process remains largely untapped and often relies on physical heuristics or simplifying assumptions. Utilizing insights from the development of scalable Bayesian posterior samplers, we present a complete recipe for formulating forward processes in SGMs, ensuring convergence to the desired target distribution. Our approach reveals that several existing SGMs can be seen as specific manifestations of our framework. Building upon this method, we introduce Phase Space Langevin Diffusion (PSLD), which relies on score-based modeling within an augmented space enriched by auxiliary variables akin to physical phase space. Empirical results exhibit the superior sample quality and improved speed-quality trade-off of PSLD compared to various competing approaches on established image synthesis benchmarks. Remarkably, PSLD achieves sample quality akin to state-of-the-art SGMs (FID: 2.10 for unconditional CIFAR-10 generation). Lastly, we demonstrate the applicability of PSLD in conditional synthesis using pre-trained score networks, offering an appealing alternative as an SGM backbone for future advancements. Code and model checkpoints can be accessed at https://github.com/mandt-lab/PSLD},
-  journal   = {International Conference on Computer Vision},
-  pdf       = {https://openaccess.thecvf.com/content/ICCV2023/html/Pandey_A_Complete_Recipe_for_Diffusion_Generative_Models_ICCV_2023_paper.html},
-  code      = {https://github.com/mandt-lab/PSLD}
+  abbr     = {ICCV'23},
+  abbr2    = {Conference},
+  abbr3    = {Oral},
+  comments = {Oral Presentation (1.8% acceptance rate)},
+  author   = {Pandey, Kushagra and Mandt, Stephan},
+  title    = {A Complete Recipe for Diffusion Generative Models},
+  pages    = {4261--4272},
+  year     = {2023},
+  abstract = {Score-based Generative Models (SGMs) have demonstrated exceptional synthesis outcomes across various tasks. However, the current design landscape of the forward diffusion process remains largely untapped and often relies on physical heuristics or simplifying assumptions. Utilizing insights from the development of scalable Bayesian posterior samplers, we present a complete recipe for formulating forward processes in SGMs, ensuring convergence to the desired target distribution. Our approach reveals that several existing SGMs can be seen as specific manifestations of our framework. Building upon this method, we introduce Phase Space Langevin Diffusion (PSLD), which relies on score-based modeling within an augmented space enriched by auxiliary variables akin to physical phase space. Empirical results exhibit the superior sample quality and improved speed-quality trade-off of PSLD compared to various competing approaches on established image synthesis benchmarks. Remarkably, PSLD achieves sample quality akin to state-of-the-art SGMs (FID: 2.10 for unconditional CIFAR-10 generation). Lastly, we demonstrate the applicability of PSLD in conditional synthesis using pre-trained score networks, offering an appealing alternative as an SGM backbone for future advancements. Code and model checkpoints can be accessed at https://github.com/mandt-lab/PSLD},
+  journal  = {International Conference on Computer Vision},
+  pdf      = {https://openaccess.thecvf.com/content/ICCV2023/html/Pandey_A_Complete_Recipe_for_Diffusion_Generative_Models_ICCV_2023_paper.html},
+  code     = {https://github.com/mandt-lab/PSLD}
 }
 
 @article{diffuseVAE,

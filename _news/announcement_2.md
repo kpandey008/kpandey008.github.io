@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2023-10-27
+date: 2024-12-10
 inline: true
 ---
 
-<!-- Our work on VAEDM has been accepted as an Oral presentation :sparkles: at the NeurIPS 2021 Workshop on DGM Applications -->
-Our work on "Towards Fast Stochastic Sampling in Diffusion Generative Models" has been accepted at the NeurIPS 2023 Workshop on Diffusion Models :sparkles:
+Check out our new work on [accelerating inverse problem solving using diffusion models](https://mandt-lab.github.io/c-pigdm/) to be presented as NeurIPS'24.
