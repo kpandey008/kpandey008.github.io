@@ -3,26 +3,68 @@
 
 @string{aps = {American Physical Society,}}
 
-@article{manduchi2024challengesopportunitiesgenerativeai,
+@article{lee2026variationaltesttime,
+  abbr    = {Arxiv},
+  abbr2   = {Preprint},
+  title   = {Variational Test-time Optimization for Diffusion Synchronization},
+  author  = {Lee, Hyunsoo and Sofian, Farrin Marouf and Pandey, Kushagra and Mandt, Stephan},
+  year    = {2026},
+  journal = {Preprint, Under Review}
+}
+
+@article{pandey2026hierarchical,
+  abbr    = {Arxiv},
+  abbr2   = {Preprint},
+  title   = {Hierarchical Variational Policies for Reward-Guided Diffusion},
+  author  = {Pandey, Kushagra and Sofian, Farrin Marouf and Groeneveld, Jan Niklas and Draxler, Felix and Mandt, Stephan},
+  year    = {2026},
+  journal = {Preprint, Under Review}
+}
+
+@article{srivastava2026controlaugmented,
   abbr     = {Arxiv},
   abbr2    = {Preprint},
+  title    = {Control-Augmented Autoregressive Diffusion for Data Assimilation},
+  author   = {Srivastava, Prakhar and Sofian, Farrin Marouf and Immorlano, Francesco and Pandey, Kushagra and Mandt, Stephan},
+  year     = {2026},
+  pdf      = {https://arxiv.org/abs/2510.06637},
+  journal  = {Preprint, Under Review},
+  abstract = {Despite advances in test-time scaling and diffusion finetuning, guidance for Auto-Regressive Diffusion Models (ARDMs) remains underexplored. We introduce an amortized framework that augments a pretrained ARDM with an offline-trained controller. By previewing future rollouts, the controller learns stepwise corrections that anticipate observations under a terminal-cost objective, yielding a reusable policy for guided generation. Motivated by a stochastic optimal control view of ARDM trajectories, our method injects small controls within each denoising sub-step while staying close to the pretrained dynamics. We study this approach for data assimilation (DA) in chaotic spatiotemporal partial differential equations (PDEs), where existing methods are often computationally expensive and susceptible to forecast drift under sparse observations. At inference, DA becomes a feed-forward rollout with on-the-fly corrections, achieving an order-of-magnitude speedup over strong diffusion-based baselines. Across two canonical PDEs and a compact ECMWF Reanalysis v5 (ERA5) pilot spanning six observation regimes, our method consistently improves stability and accuracy over state-of-the-art alternatives, with similar improvements observed in a larger-scale GenCast study.}
+}
+
+@article{manduchi2024challengesopportunitiesgenerativeai,
+  abbr     = {TMLR'25},
+  abbr2    = {Journal},
+  comments = {Survey Certification},
   title    = {On the Challenges and Opportunities in Generative AI},
-  author   = {Laura Manduchi and Kushagra Pandey and Robert Bamler and Ryan Cotterell and Sina Däubener and Sophie Fellenz and Asja Fischer and Thomas Gärtner and Matthias Kirchler and Marius Kloft and Yingzhen Li and Christoph Lippert and Gerard de Melo and Eric Nalisnick and Björn Ommer and Rajesh Ranganath and Maja Rudolph and Karen Ullrich and Guy Van den Broeck and Julia E Vogt and Yixin Wang and Florian Wenzel and Frank Wood and Stephan Mandt and Vincent Fortuin},
-  year     = {2024},
-  pdf      = {https://arxiv.org/pdf/2403.00025},
-  journal  = {Arxiv},
+  author   = {Laura Manduchi and Clara Meister and Kushagra Pandey and Robert Bamler and Ryan Cotterell and Sina Däubener and Sophie Fellenz and Asja Fischer and Thomas Gärtner and Matthias Kirchler and Marius Kloft and Yingzhen Li and Christoph Lippert and Gerard de Melo and Eric Nalisnick and Björn Ommer and Rajesh Ranganath and Maja Rudolph and Karen Ullrich and Guy Van den Broeck and Julia E Vogt and Yixin Wang and Florian Wenzel and Frank Wood and Stephan Mandt and Vincent Fortuin},
+  year     = {2025},
+  pdf      = {https://openreview.net/pdf?id=NeS9Kj2JwF},
+  journal  = {Transactions on Machine Learning Research},
   abstract = {The field of deep generative modeling has grown rapidly and consistently over the years. With the availability of massive amounts of training data coupled with advances in scalable unsupervised learning paradigms, recent large-scale generative models show tremendous promise in synthesizing high-resolution images and text, as well as structured data such as videos and molecules. However, we argue that current large-scale generative AI models do not sufficiently address several fundamental issues that hinder their widespread adoption across domains. In this work, we aim to identify key unresolved challenges in modern generative AI paradigms that should be tackled to further enhance their capabilities, versatility, and reliability. By identifying these challenges, we aim to provide researchers with valuable insights for exploring fruitful research directions, thereby fostering the development of more robust and accessible generative AI solutions.}
 }
 
+@article{pandey2025variationalcontrol,
+  abbr     = {ICML'25},
+  abbr2    = {Conference},
+  title    = {Variational Control for Guidance in Diffusion Models},
+  author   = {Pandey, Kushagra and Sofian, Farrin Marouf and Draxler, Felix and Karaletsos, Theofanis and Mandt, Stephan},
+  year     = {2025},
+  pdf      = {https://arxiv.org/abs/2502.03686},
+  journal  = {International Conference on Machine Learning},
+  code     = {https://github.com/czi-ai/oc-guidance},
+  abstract = {Diffusion models exhibit excellent sample quality, but existing guidance methods often require additional model training or are limited to specific tasks. We revisit guidance in diffusion models from the perspective of variational inference and control, introducing Diffusion Trajectory Matching (DTM) that enables guiding pretrained diffusion trajectories to satisfy a terminal cost. DTM unifies a broad class of guidance methods and enables novel instantiations. We introduce a new method within this framework that achieves state-of-the-art results on several linear, non-linear, and blind inverse problems without requiring additional model training or specificity to pixel or latent space diffusion models.}
+}
+
 @article{pandey2024heavytaileddiffusionmodels,
-  abbr     = {Arxiv},
-  abbr2    = {Preprint},
+  abbr     = {ICLR'25},
+  abbr2    = {Conference},
   title    = {Heavy-Tailed Diffusion Models},
   author   = {Kushagra Pandey and Jaideep Pathak and Yilun Xu and Stephan Mandt and Michael Pritchard and Arash Vahdat and Morteza Mardani},
-  year     = {2024},
+  year     = {2025},
   abstract = {Diffusion models achieve state-of-the-art generation quality across many applications, but their ability to capture rare or extreme events in heavy-tailed distributions remains unclear. In this work, we show that traditional diffusion and flow-matching models with standard Gaussian priors fail to capture heavy-tailed behavior. We address this by repurposing the diffusion framework for heavy-tail estimation using multivariate Student-t distributions. We develop a tailored perturbation kernel and derive the denoising posterior based on the conditional Student-t distribution for the backward process. Inspired by γ-divergence for heavy-tailed distributions, we derive a training objective for heavy-tailed denoisers. The resulting framework introduces controllable tail generation using only a single scalar hyperparameter, making it easily tunable for diverse real-world distributions. As specific instantiations of our framework, we introduce t-EDM and t-Flow, extensions of existing diffusion and flow models that employ a Student-t prior. Remarkably, our approach is readily compatible with standard Gaussian diffusion models and requires only minimal code changes. Empirically, we show that our t-EDM and t-Flow outperform standard diffusion models in heavy-tail estimation on high-resolution weather datasets in which generating rare and extreme events is crucial.},
-  pdf      = {https://arxiv.org/pdf/2410.14171},
-  journal  = {Arxiv}
+  pdf      = {https://openreview.net/forum?id=tozlOEN4qp},
+  journal  = {International Conference on Learning Representations}
 }
 
 @article{pandey2024fast,
@@ -64,7 +106,7 @@
               [Pandey & Mandt, 2023] on CIFAR-10, our deterministic and stochastic samplers achieve FID scores of 2.11 and 2.36 in only 100 network function evaluations (NFE) as compared to 2.57 and 2.63 for the best-performing baselines,
               respectively. Our code and model checkpoints will be made publicly available at
               https://github.com/mandt-lab/PSLD},
-  pdf      = {https://arxiv.org/abs/2310.07894},
+  pdf      = {https://openreview.net/forum?id=qA4foxO5Gf},
   journal  = {International Conference on Learning Representations},
   code     = {https://github.com/mandt-lab/PSLD}
 }
@@ -73,7 +115,7 @@
   abbr     = {ICCV'23},
   abbr2    = {Conference},
   abbr3    = {Oral},
-  comments = {Oral Presentation (1.8% acceptance rate)},
+  comments = {Oral Presentation (1.6% acceptance rate)},
   author   = {Pandey, Kushagra and Mandt, Stephan},
   title    = {A Complete Recipe for Diffusion Generative Models},
   pages    = {4261--4272},
